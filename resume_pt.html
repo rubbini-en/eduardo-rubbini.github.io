@@ -5,102 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Rubbini - Currículo</title>
     <meta name="description" content="Currículo profissional de Eduardo Rubbini, mostrando habilidades, experiência e educação.">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <button id="darkModeToggle">Toggle Dark Mode</button>
-    <div class="container">
-        <header class="header">
+    <button id="darkModeToggle" class="btn btn-dark">Toggle Dark Mode</button>
+    <div class="container mt-4">
+        <header class="header text-center bg-dark text-white py-5">
             <h1>Eduardo Rubbini</h1>
             <p>Desenvolvedor Backend</p>
         </header>
-        <nav class="nav">
-            <ul>
-                <li><a href="#contact">Contato</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#languages">Idiomas</a></li>
-                <li><a href="#education">Educação</a></li>
-                <li><a href="#experience">Experiência</a></li>
-                <li><a href="#certifications">Certificações</a></li>
+        <nav class="nav justify-content-center bg-secondary py-2">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contato</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#languages">Idiomas</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#education">Educação</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#experience">Experiência</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#certifications">Certificações</a></li>
             </ul>
         </nav>
         <main>
-            <section id="contact">
+            <div class="language-buttons text-center mt-4 mb-4">
+                <a href="resume_en.html" class="btn btn-primary">English</a>
+                <a href="resume_es.html" class="btn btn-secondary">Español</a>
+                <a href="resume_pt.html" class="btn btn-success">Português</a>
+            </div>
+            <section id="contact" class="mb-5">
                 <h2>Contato</h2>
                 <p><i class="fas fa-envelope"></i> Email: <a href="mailto:rubbinien@hotmail.com">rubbinien@hotmail.com</a></p>
                 <p><i class="fas fa-phone"></i> Telefone: +595 0991978764</p>
                 <p><i class="fas fa-map-marker-alt"></i> Localização: Assunção, Paraguai</p>
                 <p><i class="fas fa-globe"></i> Site: <a href="http://reallygreatsite.com">reallygreatsite.com</a></p>
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/eduardo-deriv">GitHub da empresa</a>, <a href="https://github.com/your-personal-github">GitHub pessoal</a></p>
             </section>
 
-            <section id="skills">
+            <section id="skills" class="mb-5">
                 <h2>Habilidades</h2>
-                <ul>
-                    <li>Desenvolvimento Web</li>
-                    <li>Gestão de Banco de Dados</li>
-                    <li>Controle de Versão</li>
-                    <li>Resolução de Problemas</li>
-                    <li>Comunicação Forte</li>
-                    <li>Trabalho em Equipe</li>
+                <ul class="list-group">
+                    <li class="list-group-item">Desenvolvimento Web</li>
+                    <li class="list-group-item">Gestão de Banco de Dados</li>
+                    <li class="list-group-item">Controle de Versão</li>
+                    <li class="list-group-item">Resolução de Problemas</li>
+                    <li class="list-group-item">Comunicação Forte</li>
+                    <li class="list-group-item">Trabalho em Equipe</li>
                 </ul>
             </section>
 
-            <section id="languages">
+            <section id="languages" class="mb-5">
                 <h2>Idiomas</h2>
-                <ul>
-                    <li>Inglês - Proficiência Profissional</li>
-                    <li>Espanhol - Língua Nativa</li>
-                    <li>Português - Língua Nativa</li>
+                <ul class="list-group">
+                    <li class="list-group-item">Inglês - Proficiência Profissional</li>
+                    <li class="list-group-item">Espanhol - Língua Nativa</li>
+                    <li class="list-group-item">Português - Língua Nativa</li>
                 </ul>
             </section>
 
-            <section id="education">
+            <section id="education" class="mb-5">
                 <h2>Educação</h2>
-                <p>Mecatrônica - ETEP Faculdades (2017 - 2018)</p>
-                <p>Engenharia Mecatrônica - UCSA (2021 - Presente)</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Mecatrônica - ETEP Faculdades (2017 - 2018)</li>
+                    <li class="list-group-item">Engenharia Mecatrônica - UCSA (2021 - Presente)</li>
+                </ul>
             </section>
 
-            <section id="experience">
+            <section id="experience" class="mb-5">
                 <h2>Experiência</h2>
                 <h3>Deriv.com (2021 - Presente)</h3>
-                <p>Desenvolvedor Backend</p>
-                <ul>
-                    <li>Administração de banco de dados e design de sites</li>
-                    <li>Construiu a lógica para uma plataforma de anúncios simplificada e escalável</li>
-                    <li>Gestão de instituições educacionais e salas de aula online</li>
-                </ul>
-
-                <h3>Deriv.com (02/2021 - 09/2021)</h3>
-                <p>Executivo de Suporte ao Cliente</p>
-                <ul>
-                    <li>Proporcionou um serviço e suporte ao cliente excepcionais, resolvendo consultas relacionadas à gestão de contas, características da plataforma e serviços.</li>
-                    <li>Trabalhou estreitamente com vários departamentos para garantir a resolução precisa e oportuna de problemas dos clientes.</li>
-                    <li>Conduziu sessões de treinamento para novos membros da equipe de suporte.</li>
-                </ul>
-            </section>
-
-            <section id="certifications">
-                <h2>Certificações</h2>
-                <ul>
-                    <li>Diploma em Desenvolvimento Backend - UCOM</li>
-                    <li>RU 101 & 202 - Redis</li>
-                    <li>Perl Essentials - Geekuni</li>
-                    <li>Career Essentials em Desenvolvimento de Software - Microsoft</li>
-                    <li>Career Essentials em GitHub - GitHub</li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 Eduardo Rubbini</p>
-            <ul>
-                <li><a href="https://linkedin.com/in/eduardo-rubbini"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://github.com/eduardo-deriv"><i class="fab fa-github"></i> GitHub</a></li>
-            </ul>
-        </footer>
-    </div>
-</body>
-</html>
+                <p
