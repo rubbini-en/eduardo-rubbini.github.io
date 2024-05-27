@@ -5,94 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Rubbini - Resume</title>
     <meta name="description" content="Eduardo Rubbini's professional resume, showcasing skills, experience, and education.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="scripts.js" defer></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'YOUR_TRACKING_ID');
-    </script>
 </head>
 <body>
     <button id="darkModeToggle">Toggle Dark Mode</button>
-    <nav aria-label="Main Navigation">
-        <ul>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-        </ul>
-    </nav>
     <div class="container">
-        <h1>Eduardo Rubbini</h1>
-        <h2>Backend Developer</h2>
-        <p>With over three years of experience, currently overseeing microservices infrastructure. Skilled in Perl, Docker, PostgreSQL, Node.js, and YAML. Specializes in improving backend performance and API integration. Dedicated to rapid learning and providing high-quality solutions.</p>
+        <header class="header">
+            <h1>Eduardo Rubbini</h1>
+            <p>Backend Developer</p>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:rubbinien@hotmail.com">rubbinien@hotmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: +595 0991978764</p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: Asunción, Paraguay</p>
+                <p><i class="fas fa-globe"></i> Website: <a href="http://reallygreatsite.com">reallygreatsite.com</a></p>
+            </section>
 
-        <h3 id="contact">Contact</h3>
-        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:rubbinien@hotmail.com">rubbinien@hotmail.com</a></p>
-        <p><i class="fas fa-phone"></i> Phone: +595 0991978764</p>
-        <p><i class="fas fa-map-marker-alt"></i> Location: Asunción, Paraguay</p>
-        <p><i class="fas fa-globe"></i> Website: <a href="http://reallygreatsite.com">reallygreatsite.com</a></p>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Database Management</li>
+                    <li>Version Control</li>
+                    <li>Problem-Solving</li>
+                    <li>Strong Communication</li>
+                    <li>Team Player</li>
+                </ul>
+            </section>
 
-        <h3 id="skills">Skills</h3>
-        <ul>
-            <li>Web Development</li>
-            <li>Database Management</li>
-            <li>Version Control</li>
-            <li>Problem-Solving</li>
-            <li>Strong Communication</li>
-            <li>Team Player</li>
-        </ul>
+            <section id="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English - Professional Proficiency</li>
+                    <li>Spanish - Native Proficiency</li>
+                    <li>Portuguese - Native Proficiency</li>
+                </ul>
+            </section>
 
-        <h3 id="languages">Languages</h3>
-        <ul>
-            <li>English - Professional Proficiency</li>
-            <li>Spanish - Native Proficiency</li>
-            <li>Portuguese - Native Proficiency</li>
-        </ul>
+            <section id="education">
+                <h2>Education</h2>
+                <p>Mechatronics - ETEP Faculdades (2017 - 2018)</p>
+                <p>Mechatronics Engineering - UCSA (2021 - Present)</p>
+            </section>
 
-        <h3 id="education">Education</h3>
-        <p>Mechatronics - ETEP Faculdades (2017 - 2018)</p>
-        <p>Mechatronics Engineering - UCSA (2021 - Present)</p>
+            <section id="experience">
+                <h2>Experience</h2>
+                <h3>Deriv.com (2021 - Present)</h3>
+                <p>Backend Developer</p>
+                <ul>
+                    <li>Database administration and website design</li>
+                    <li>Built the logic for a streamlined ad-serving platform that scaled</li>
+                    <li>Educational institutions and online classroom management</li>
+                </ul>
 
-        <h3 id="experience">Experience</h3>
-        <h4>Deriv.com (2021 - Present)</h4>
-        <p>Backend Developer</p>
-        <ul>
-            <li>Database administration and website design</li>
-            <li>Built the logic for a streamlined ad-serving platform that scaled</li>
-            <li>Educational institutions and online classroom management</li>
-        </ul>
+                <h3>Deriv.com (02/2021 - 09/2021)</h3>
+                <p>Customer Support Executive</p>
+                <ul>
+                    <li>Provided exceptional customer service and support, resolving inquiries related to account management, platform features, and services.</li>
+                    <li>Worked closely with various departments to ensure accurate and timely resolution of customer issues.</li>
+                    <li>Conducted training sessions for new support team members.</li>
+                </ul>
+            </section>
 
-        <h4>Deriv.com (02/2021 - 09/2021)</h4>
-        <p>Customer Support Executive</p>
-        <ul>
-            <li>Provided exceptional customer service and support, resolving inquiries related to account management, platform features, and services.</li>
-            <li>Worked closely with various departments to ensure accurate and timely resolution of customer issues.</li>
-            <li>Conducted training sessions for new support team members.</li>
-        </ul>
-
-        <h3 id="certifications">Certifications</h3>
-        <ul>
-            <li>Diploma in Backend Development - UCOM</li>
-            <li>RU 101 & 202 - Redis</li>
-            <li>Perl Essentials - Geekuni</li>
-            <li>Career Essentials in Software Development - Microsoft</li>
-            <li>Career Essentials in GitHub - GitHub</li>
-        </ul>
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Diploma in Backend Development - UCOM</li>
+                    <li>RU 101 & 202 - Redis</li>
+                    <li>Perl Essentials - Geekuni</li>
+                    <li>Career Essentials in Software Development - Microsoft</li>
+                    <li>Career Essentials in GitHub - GitHub</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Eduardo Rubbini</p>
+            <ul>
+                <li><a href="https://linkedin.com/in/eduardo-rubbini"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/eduardo-deriv"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </footer>
     </div>
-    <footer>
-        <p>&copy; 2024 Eduardo Rubbini</p>
-        <ul>
-            <li><a href="https://linkedin.com/in/eduardo-rubbini"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/eduardo-deriv"><i class="fab fa-github"></i> GitHub</a></li>
-        </ul>
-    </footer>
 </body>
 </html>
