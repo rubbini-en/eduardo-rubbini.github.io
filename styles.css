@@ -1,4 +1,4 @@
-/* General Styles */
+/* Custom Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,28 +8,46 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header Styles */
 .header {
-    text-align: center;
-    background: #333;
-    color: white;
-    padding: 20px 0;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.language-buttons .btn {
+    margin: 0 5px;
 }
 
-.header p {
-    margin: 0;
-    font-size: 1.2em;
+.section-title {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-mode .header {
+    background: #444;
+}
+
+.dark-mode .nav {
+    background: #555;
+}
+
+.dark-mode .footer {
+    background: #444;
+}
+
+.dark-mode .btn {
+    background: #666;
+    color: #f4f4f4;
+}
+
+/* Custom Spacing */
+.container {
+    padding: 20px;
 }
 
 /* Navigation Styles */
@@ -37,9 +55,6 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
-    background: #444;
-    padding: 10px 0;
 }
 
 .nav ul li {
@@ -76,8 +91,6 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px 0;
-    background: #333;
-    color: white;
 }
 
 footer ul {
@@ -115,21 +128,4 @@ button {
 
 button:hover {
     background: #555;
-}
-
-/* Dark Mode Styles */
-.dark-mode {
-    background-color: #333;
-    color: #f4f4f4;
-}
-
-.dark-mode .header,
-.dark-mode .nav,
-.dark-mode footer {
-    background: #444;
-}
-
-.dark-mode main section {
-    background: #444;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
