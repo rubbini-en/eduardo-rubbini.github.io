@@ -6,48 +6,58 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 .header {
     background: url('background.jpg') no-repeat center center;
     background-size: cover;
+    transition: background 0.3s ease; /* Smooth transition */
 }
 
 .language-buttons .btn {
     margin: 0 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 .section-title {
     margin-top: 0;
     color: #333;
+    transition: color 0.3s ease; /* Smooth transition */
 }
 
 /* Dark Mode Styles */
 .dark-mode {
     background-color: #333;
     color: #f4f4f4;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 .dark-mode .header {
     background: #444;
+    transition: background 0.3s ease; /* Smooth transition */
 }
 
 .dark-mode .nav {
     background: #555;
+    transition: background 0.3s ease; /* Smooth transition */
 }
 
 .dark-mode .footer {
     background: #444;
+    transition: background 0.3s ease; /* Smooth transition */
 }
 
 .dark-mode .btn {
     background: #666;
     color: #f4f4f4;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 /* Custom Spacing */
 .container {
     padding: 20px;
+    transition: padding 0.3s ease; /* Smooth transition */
 }
 
 /* Navigation Styles */
@@ -55,17 +65,20 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    transition: padding 0.3s ease, margin 0.3s ease; /* Smooth transition */
 }
 
 .nav ul li {
     display: inline;
     margin: 0 15px;
+    transition: margin 0.3s ease; /* Smooth transition */
 }
 
 .nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
 .nav ul li a:hover {
@@ -79,11 +92,13 @@ main section {
     background: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: margin 0.3s ease, padding 0.3s ease, background 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
 main section h2 {
     margin-top: 0;
     color: #333;
+    transition: margin-top 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 /* Footer Styles */
@@ -91,22 +106,26 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px 0;
+    transition: margin-top 0.3s ease, padding 0.3s ease; /* Smooth transition */
 }
 
 footer ul {
     list-style: none;
     padding: 0;
     margin: 10px 0 0;
+    transition: padding 0.3s ease, margin 0.3s ease; /* Smooth transition */
 }
 
 footer ul li {
     display: inline;
     margin: 0 10px;
+    transition: margin 0.3s ease; /* Smooth transition */
 }
 
 footer ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
 footer ul li a:hover {
@@ -124,6 +143,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease, padding 0.3s ease; /* Smooth transition */
 }
 
 button:hover {
