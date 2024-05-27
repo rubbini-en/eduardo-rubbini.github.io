@@ -6,58 +6,53 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header {
     background: url('background.jpg') no-repeat center center;
     background-size: cover;
-    transition: background 0.3s ease; /* Smooth transition */
+    transition: background 0.3s ease;
 }
 
 .language-buttons .btn {
     margin: 0 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .section-title {
     margin-top: 0;
     color: #333;
-    transition: color 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease;
 }
 
 /* Dark Mode Styles */
 .dark-mode {
     background-color: #333;
     color: #f4f4f4;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 .dark-mode .header {
     background: #444;
-    transition: background 0.3s ease; /* Smooth transition */
 }
 
 .dark-mode .nav {
     background: #555;
-    transition: background 0.3s ease; /* Smooth transition */
 }
 
 .dark-mode .footer {
     background: #444;
-    transition: background 0.3s ease; /* Smooth transition */
 }
 
 .dark-mode .btn {
     background: #666;
     color: #f4f4f4;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 /* Custom Spacing */
 .container {
     padding: 20px;
-    transition: padding 0.3s ease; /* Smooth transition */
+    transition: padding 0.3s ease;
 }
 
 /* Navigation Styles */
@@ -65,20 +60,20 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    transition: padding 0.3s ease, margin 0.3s ease; /* Smooth transition */
+    transition: padding 0.3s ease, margin 0.3s ease;
 }
 
 .nav ul li {
     display: inline;
     margin: 0 15px;
-    transition: margin 0.3s ease; /* Smooth transition */
+    transition: margin 0.3s ease;
 }
 
 .nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .nav ul li a:hover {
@@ -92,13 +87,13 @@ main section {
     background: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: margin 0.3s ease, padding 0.3s ease, background 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    transition: margin 0.3s ease, padding 0.3s ease, background 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease;
 }
 
 main section h2 {
     margin-top: 0;
     color: #333;
-    transition: margin-top 0.3s ease, color 0.3s ease; /* Smooth transition */
+    transition: margin-top 0.3s ease, color 0.3s ease;
 }
 
 /* Footer Styles */
@@ -106,26 +101,26 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px 0;
-    transition: margin-top 0.3s ease, padding 0.3s ease; /* Smooth transition */
+    transition: margin-top 0.3s ease, padding 0.3s ease;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
     margin: 10px 0 0;
-    transition: padding 0.3s ease, margin 0.3s ease; /* Smooth transition */
+    transition: padding 0.3s ease, margin 0.3s ease;
 }
 
 footer ul li {
     display: inline;
     margin: 0 10px;
-    transition: margin 0.3s ease; /* Smooth transition */
+    transition: margin 0.3s ease;
 }
 
 footer ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 footer ul li a:hover {
@@ -143,9 +138,22 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease, padding 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease, padding 0.3s ease;
 }
 
 button:hover {
     background: #555;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    transition: display 0.3s ease;
+}
+
+#backToTop.show {
+    display: block;
 }
