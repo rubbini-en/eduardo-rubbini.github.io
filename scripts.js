@@ -5,8 +5,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     toggleButton.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
-        darkModeIcon.classList.toggle('fa-moon');
-        darkModeIcon.classList.toggle('fa-sun');
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeIcon.classList.remove('fa-moon');
+            darkModeIcon.classList.add('fa-sun');
+        } else {
+            darkModeIcon.classList.remove('fa-sun');
+            darkModeIcon.classList.add('fa-moon');
+        }
     });
 
     window.addEventListener('scroll', () => {
