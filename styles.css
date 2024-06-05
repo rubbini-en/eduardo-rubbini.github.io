@@ -12,7 +12,24 @@ body {
 .header {
     background: url('background.jpg') no-repeat center center;
     background-size: cover;
-    transition: background 0.3s ease;
+    padding: 100px 0;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 1.5em;
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    transition: color 0.3s ease;
 }
 
 .language-buttons .btn {
@@ -36,8 +53,8 @@ body {
     background: #444;
 }
 
-.dark-mode .nav {
-    background: #555;
+.dark-mode .navbar {
+    background-color: #555;
 }
 
 .dark-mode .footer {
@@ -156,4 +173,14 @@ button:hover {
 
 #backToTop.show {
     display: block;
+}
+
+/* Tech Stack Icons */
+#tech-stack .fa-3x {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#tech-stack .fa-3x:hover {
+    color: #007bff;
 }

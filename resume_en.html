@@ -10,29 +10,51 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_TRACKING_ID');
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts.js" defer></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Eduardo Rubbini</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tech-stack">Tech Stack</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <button id="darkModeToggle" class="btn btn-dark"><i id="darkModeIcon" class="fas fa-moon"></i></button>
-    <div class="container mt-4">
-        <header class="header text-center bg-dark text-white py-5">
-            <h1>Eduardo Rubbini</h1>
-            <p>Backend Developer</p>
-        </header>
-        <nav class="nav justify-content-center bg-secondary py-2 fixed-top">
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#languages">Languages</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#certifications">Certifications</a></li>
-            </ul>
-        </nav>
-        <main>
+    <header class="header text-center text-white" style="background: url('background.jpg') no-repeat center center; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="text-uppercase">Eduardo Rubbini</h1>
+                    <p class="lead">Backend Developer</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
             <div class="language-buttons text-center mt-4 mb-4">
                 <a href="resume_en.html" class="btn btn-primary">English</a>
                 <a href="resume_es.html" class="btn btn-secondary">Español</a>
@@ -98,23 +120,130 @@
             <section id="certifications" class="mb-5">
                 <h2>Certifications</h2>
                 <ul class="list-group">
-                    <li class="list-group-item">Diploma in Backend Development - UCOM</li>
-                    <li class="list-group-item">RU 101 & 202 - Redis</li>
-                    <li class="list-group-item">Perl Essentials - Geekuni</li>
-                    <li class="list-group-item">Career Essentials in Software Development - Microsoft</li>
-                    <li class="list-group-item">Career Essentials in GitHub - GitHub</li>
+                    <li class="list-group-item">
+                        <a href="https://www.example.com" data-toggle="tooltip" title="UCOM - Diploma in Backend Development">Diploma in Backend Development - UCOM</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.example.com" data-toggle="tooltip" title="Redis - RU 101 & 202">RU 101 & 202 - Redis</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.example.com" data-toggle="tooltip" title="Geekuni - Perl Essentials">Perl Essentials - Geekuni</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.example.com" data-toggle="tooltip" title="Microsoft - Career Essentials in Software Development">Career Essentials in Software Development - Microsoft</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.example.com" data-toggle="tooltip" title="GitHub - Career Essentials in GitHub">Career Essentials in GitHub - GitHub</a>
+                    </li>
                 </ul>
             </section>
-        </main>
-        <footer class="footer bg-dark text-white text-center py-3">
-            <p>&copy; 2024 Eduardo Rubbini</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="https://linkedin.com/in/eduardo-rubbini" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li class="list-inline-item"><a href="https://github.com/eduardo-deriv" class="text-white"><i class="fab fa-github"></i> Enterprise GitHub</a></li>
-                <li class="list-inline-item"><a href="https://github.com/your-personal-github" class="text-white"><i class="fab fa-github"></i> Personal GitHub</a></li>
-            </ul>
-        </footer>
-    </div>
+
+            <section id="tech-stack" class="mb-5">
+                <h2>Tech Stack</h2>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <i class="fab fa-react fa-3x" data-toggle="modal" data-target="#reactModal"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fab fa-vuejs fa-3x" data-toggle="modal" data-target="#vueModal"></i>
+                        <p>Vue.js</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fab fa-golang fa-3x" data-toggle="modal" data-target="#goModal"></i>
+                        <p>Go</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fab fa-perl fa-3x" data-toggle="modal" data-target="#perlModal"></i>
+                        <p>Perl</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Eduardo Rubbini</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://linkedin.com/in/eduardo-rubbini" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li class="list-inline-item"><a href="https://github.com/eduardo-deriv" class="text-white"><i class="fab fa-github"></i> Enterprise GitHub</a></li>
+            <li class="list-inline-item"><a href="https://github.com/your-personal-github" class="text-white"><i class="fab fa-github"></i> Personal GitHub</a></li>
+        </ul>
+    </footer>
     <button id="backToTop" class="btn btn-dark"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Modals for Tech Stack -->
+    <div class="modal fade" id="reactModal" tabindex="-1" role="dialog" aria-labelledby="reactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reactModalLabel">React</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.
+                    <br><a href="https://reactjs.org/" target="_blank">Learn more about React</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vueModal" tabindex="-1" role="dialog" aria-labelledby="vueModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vueModalLabel">Vue.js</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Vue.js is an open-source model–view–viewmodel JavaScript framework for building user interfaces and single-page applications. It was created by Evan You.
+                    <br><a href="https://vuejs.org/" target="_blank">Learn more about Vue.js</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="goModal" tabindex="-1" role="dialog" aria-labelledby="goModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="goModalLabel">Go</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Go is a statically typed, compiled programming language designed at Google. It is syntactically similar to C but with memory safety, garbage collection, structural typing, and CSP-style concurrency.
+                    <br><a href="https://golang.org/" target="_blank">Learn more about Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="perlModal" tabindex="-1" role="dialog" aria-labelledby="perlModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="perlModalLabel">Perl</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Perl is a family of two high-level, general-purpose, interpreted, dynamic programming languages. "Perl" refers to Perl 5, but from 2000 to 2019 it also referred to its redesigned "sister" language, Perl 6, before the latter's name was officially changed to Raku.
+                    <br><a href="https://www.perl.org/" target="_blank">Learn more about Perl</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 </html>

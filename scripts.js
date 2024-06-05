@@ -25,4 +25,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     backToTopButton.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="modal"]').modal();
+    });
 });
