@@ -184,3 +184,23 @@ button:hover {
 #tech-stack .fa-3x:hover {
     color: #007bff;
 }
+
+/* Ensure content is visible and page is scrollable */
+body {
+    overflow: auto;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+}
+
+main {
+    padding: 60px 0;
+}
+
+main section {
+    background-color: white;
+}
